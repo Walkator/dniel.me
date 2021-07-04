@@ -1,4 +1,4 @@
-# My web portfolio
+# My portfolio
 
 This page is designed by @bchiang7
 
