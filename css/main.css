@@ -125,14 +125,14 @@ html.night .switch-wrapper .moon {
     background-size: 100%
 }
 
-body.night .experience .job__time,
+body.night .experience .job__time .job__position,
 body.night .footer__copyright,
 body.night .intro,
 body.night .skills .skillz__category__label,
 body.night .status,
 body.night a,
 body.night strong,
-html.night .experience .job__time,
+html.night .experience .job__time .job__position,
 html.night .footer__copyright,
 html.night .intro,
 html.night .skills .skillz__category__label,
@@ -791,13 +791,17 @@ strong {
     font-weight: 700
 }
 
-.experience .job__time {
+.experience .job__time .job__position {
     font-size: .9rem;
-    font-family: Inconsolata, monospace
+    font-family: Inconsolata, monospace;
+}
+
+.job__position {
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width:480px) {
-    .experience .job__time {
+    .experience .job__time .job__position {
         font-size: .8rem
     }
 }
