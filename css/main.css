@@ -840,7 +840,7 @@ strong {
     align-items: center
 }
 
-.status__light__ring {
+.status__light__ring__green {
     position: absolute;
     width: 25px;
     height: 25px;
@@ -850,6 +850,19 @@ strong {
     animation-iteration-count: infinite;
     opacity: 0;
     border: 3px solid #bae67e;
+    border-radius: 30px
+}
+
+.status__light__ring__red {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    -webkit-animation: pulsate 2s ease-out;
+    animation: pulsate 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    border: 3px solid #e67e7e;
     border-radius: 30px
 }
 
@@ -885,11 +898,19 @@ strong {
     }
 }
 
-.status__light__led {
+.status__light__led__green {
     position: absolute;
     width: 13px;
     height: 13px;
     background: #bae67e;
+    border-radius: 100%
+}
+
+.status__light__led__red {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: #e67e7e;
     border-radius: 100%
 }
 
