@@ -88,11 +88,11 @@ html {
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #fff;
-    color: #444452;
+    background-color: #141414;
     font-family: Apercu, "Source Sans Pro", system, system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.5;
-    width: 100%
+    width: 100%;
+    -webkit-transition: all .2s ease-in-out
 }
 
 body.night,
@@ -110,6 +110,24 @@ html.night ::-moz-selection {
 body.night ::selection,
 html.night ::selection {
     color: #36363c;
+    background: #ffdc00
+}
+
+body.light,
+html.light {
+    background-color: #fff;
+    color: #444452
+}
+
+body.light ::-moz-selection,
+html.light ::-moz-selection {
+    color: #444452;
+    background: #ffdc00
+}
+
+body.light ::selection,
+html.light ::selection {
+    color: #444452;
     background: #ffdc00
 }
 
@@ -726,7 +744,8 @@ strong {
 .intro__contact .highlight-link:hover {
     -webkit-box-shadow: inset 0 -33px 0 0 #0bbbbb;
     box-shadow: inset 0 -33px 0 0 #0bbbbb;
-    color: #fff
+    color: #fff;
+    border-radius: 25px
 }
 
 .skills .skillz {

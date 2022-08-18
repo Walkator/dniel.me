@@ -15,7 +15,9 @@ $(function() {
         const isChecked = input.checked;
         if (isChecked) {
             body.classList.remove('night');
+            body.classList.add('light');
         } else {
+            body.classList.remove('light');
             body.classList.add('night');
         }
     });
