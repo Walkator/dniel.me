@@ -68,9 +68,13 @@ $(function() {
         duration: 600,
         easing: 'cubic-bezier(.694,0,.335,1)',
         scale: 1,
-        viewFactor: 0.3,
+        viewFactor: 0.2,
     });
-
+    
+    sr.reveal('.switch-wrapper');
+    sr.reveal('.avatar');
+    sr.reveal('.highlight-link');
+    sr.reveal('.emoji');
     sr.reveal('.background');
     sr.reveal('.skills');
     sr.reveal('.experience', { viewFactor: 0.2 });
