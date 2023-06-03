@@ -92,8 +92,18 @@ html {
     font-family: Apercu, "Source Sans Pro", system, system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     -webkit-transition: all .2s ease-in-out
 }
+
+.hidden-thing {
+    position: absolute;
+    left: 100%;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
 
 body.night,
 html.night {
@@ -503,7 +513,7 @@ img.avatar {
 }
 
 .intro__tagline .technologist {
-    background-image: url(../img/emojis/technologist.png)
+    background-image: url(../img/emojis/icon.png)
 }
 
 .intro__contact {
@@ -971,6 +981,8 @@ img.avatar {
         position:absolute;
         top:10%;
         left:50%;
+        width: 190px;
+        height: 190px;
         visibility: hidden;
     }
 
