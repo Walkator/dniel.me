@@ -24,14 +24,6 @@
 
 @font-face {
     font-family: Apercu;
-    src: url(../fonts/apercu/Apercu-Italic.eot);
-    src: url(../fonts/apercu/Apercu-Italic.eot?#iefix) format("embedded-opentype"), url(../fonts/apercu/Apercu-Italic.woff2) format("woff2"), url(../fonts/apercu/Apercu-Italic.woff) format("woff"), url(../fonts/apercu/Apercu-Italic.ttf) format("truetype"), url(../fonts/apercu/Apercu-Italic.svg#Apercu-Italic) format("svg");
-    font-weight: 400;
-    font-style: italic
-}
-
-@font-face {
-    font-family: Apercu;
     src: url(../fonts/apercu/Apercu-Medium.eot);
     src: url(../fonts/apercu/Apercu-Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/apercu/Apercu-Medium.woff2) format("woff2"), url(../fonts/apercu/Apercu-Medium.woff) format("woff"), url(../fonts/apercu/Apercu-Medium.ttf) format("truetype"), url(../fonts/apercu/Apercu-Medium.svg#Apercu-Medium) format("svg");
     font-weight: 500;
@@ -40,26 +32,10 @@
 
 @font-face {
     font-family: Apercu;
-    src: url(../fonts/apercu/Apercu-MediumItalic.eot);
-    src: url(../fonts/apercu/Apercu-MediumItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/apercu/Apercu-MediumItalic.woff2) format("woff2"), url(../fonts/apercu/Apercu-MediumItalic.woff) format("woff"), url(../fonts/apercu/Apercu-MediumItalic.ttf) format("truetype"), url(../fonts/apercu/Apercu-MediumItalic.svg#Apercu-MediumItalic) format("svg");
-    font-weight: 500;
-    font-style: italic
-}
-
-@font-face {
-    font-family: Apercu;
     src: url(../fonts/apercu/Apercu-Bold.eot);
     src: url(../fonts/apercu/Apercu-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/apercu/Apercu-Bold.woff2) format("woff2"), url(../fonts/apercu/Apercu-Bold.woff) format("woff"), url(../fonts/apercu/Apercu-Bold.ttf) format("truetype"), url(../fonts/apercu/Apercu-Bold.svg#Apercu-Bold) format("svg");
     font-weight: 700;
     font-style: normal
-}
-
-@font-face {
-    font-family: Apercu;
-    src: url(../fonts/apercu/Apercu-BoldItalic.eot);
-    src: url(../fonts/apercu/Apercu-BoldItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/apercu/Apercu-BoldItalic.woff2) format("woff2"), url(../fonts/apercu/Apercu-BoldItalic.woff) format("woff"), url(../fonts/apercu/Apercu-BoldItalic.ttf) format("truetype"), url(../fonts/apercu/Apercu-BoldItalic.svg#Apercu-BoldItalic) format("svg");
-    font-weight: 700;
-    font-style: italic
 }
 
 html {
@@ -309,7 +285,6 @@ strong {
 }
 
 .small {
-    font-family: Inconsolata, monospace;
     font-size: .85rem;
     display: inline-block;
     margin-top: 15px
@@ -593,7 +568,6 @@ img.avatar {
 
 .experience .job__time .job__position {
     font-size: .9rem;
-    font-family: Inconsolata, monospace;
 }
 
 .job__position {
@@ -708,6 +682,17 @@ img.avatar {
     margin: 0
 }
 
+.container__video {
+    max-width: 700px;
+}
+
+.feature_video {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
 .featured-projects .project__pic a {
     display: block
 }
@@ -773,8 +758,7 @@ img.avatar {
 .other-projects .project__used__item {
     display: inline-block;
     margin: 3px 3px 3px 0;
-    font-family: Inconsolata, monospace;
-    font-size: .75rem;
+    font-size: .70rem;
     font-weight: 700;
     padding: 2px 7px;
     border-radius: 3px;
@@ -974,7 +958,6 @@ img.avatar {
     #top-button {
         bottom: 50px;
         right: 7px;
-        width: 40px
     }
 
     div.avatar__container {
