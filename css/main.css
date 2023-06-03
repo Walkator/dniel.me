@@ -81,9 +81,6 @@ html {
 ::selection {
     background: #ffdc00
 }
-* {
-    border: solid 2px #ffdc00;
-}
 
 body,
 html {
