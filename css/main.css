@@ -87,6 +87,11 @@ html.night {
     color: #afafbf
 }
 
+body.light .section__content .linkParagraph,
+html.light .section__content .linkParagraph {
+    color: #444452
+}
+
 body.night ::-moz-selection,
 html.night ::-moz-selection {
     color: #36363c;
@@ -226,6 +231,16 @@ strong {
 .section__content .underline-link {
     position: relative;
     display: inline-block
+}
+
+.linkParagraph {
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.section__content .linkParagraph {
+    color: #afafbf;
 }
 
 .section__content .underline-link:after {
