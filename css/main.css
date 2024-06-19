@@ -260,6 +260,12 @@ strong {
     font-weight: lighter;
 }
 
+.linkParagraphDetailJob {
+    text-decoration: underline;
+    font-size: .85rem;
+    font-weight: lighter;
+}
+
 .section__content .linkParagraph {
     color: #afafbf;
 }
