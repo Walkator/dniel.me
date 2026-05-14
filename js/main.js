@@ -8,7 +8,9 @@
             themeToggle.setAttribute("aria-pressed", String(!lightMode));
         };
 
-        applyTheme(false);
+        const startsInMobileLayout = window.matchMedia("(max-width: 680px)").matches;
+
+        applyTheme(!startsInMobileLayout);
 
         themeToggle.addEventListener("click", () => {
             applyTheme(!document.body.classList.contains("light"));
