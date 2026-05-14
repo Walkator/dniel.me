@@ -1,19 +1,31 @@
 (() => {
     const themeToggle = document.querySelector(".theme-toggle");
-    
-    if (!themeToggle) {
-        return;
+
+    if (themeToggle) {
+        const applyTheme = (lightMode) => {
+            document.body.classList.toggle("light", lightMode);
+            themeToggle.textContent = lightMode ? "Light" : "Dark";
+            themeToggle.setAttribute("aria-pressed", String(!lightMode));
+        };
+
+        applyTheme(false);
+
+        themeToggle.addEventListener("click", () => {
+            applyTheme(!document.body.classList.contains("light"));
+        });
     }
 
-    const applyTheme = (lightMode) => {
-        document.body.classList.toggle("light", lightMode);
-        themeToggle.textContent = lightMode ? "Light" : "Dark";
-        themeToggle.setAttribute("aria-pressed", String(!lightMode));
-    };
+    const kailiusVideo = document.querySelector(".kailius-video");
 
-    applyTheme(true);
+    if (kailiusVideo) {
+        const userAgent = navigator.userAgent;
+        const isSafari = /^((?!chrome|android|crios|fxios|edgios).)*safari/i.test(userAgent);
+        const source = isSafari ? kailiusVideo.dataset.mov : kailiusVideo.dataset.webm;
 
-    themeToggle.addEventListener("click", () => {
-        applyTheme(!document.body.classList.contains("light"));
-    });
+        if (source) {
+            kailiusVideo.classList.toggle("is-safari-video", isSafari);
+            kailiusVideo.src = source;
+            kailiusVideo.load();
+        }
+    }
 })();
