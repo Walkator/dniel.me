@@ -20,6 +20,7 @@
     --yellow: #f1c75b;
 }
 
+html.light,
 body.light {
     --paper: #fbfaf7;
     --ink: #17181d;

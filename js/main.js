@@ -3,6 +3,7 @@
 
     if (themeToggle) {
         const applyTheme = (lightMode) => {
+            document.documentElement.classList.toggle("light", lightMode);
             document.body.classList.toggle("light", lightMode);
             themeToggle.textContent = lightMode ? "Light" : "Dark";
             themeToggle.setAttribute("aria-pressed", String(!lightMode));
